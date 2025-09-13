@@ -59,6 +59,34 @@
       "type": "component",
       "component": "shared.seo",
       "repeatable": false
+    },
+    "home": {
+      "type": "boolean"
+    },
+    "Carosel": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Informacion": {
+      "type": "richtext"
+    },
+    "UrlYoutube": {
+      "type": "string"
+    },
+    "ContentMore": {
+      "type": "string"
+    },
+    "New": {
+      "type": "boolean"
+    },
+    "Tendencias": {
+      "type": "boolean"
     }
   }
 }
