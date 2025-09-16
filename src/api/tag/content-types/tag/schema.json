@@ -28,6 +28,12 @@
       "relation": "manyToOne",
       "target": "api::subscriber.subscriber",
       "inversedBy": "tags"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "favorite_tags"
     }
   }
 }
