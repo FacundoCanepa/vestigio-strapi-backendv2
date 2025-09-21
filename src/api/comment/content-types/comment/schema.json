@@ -22,12 +22,6 @@
         "rejected"
       ]
     },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "comments"
-    },
     "article": {
       "type": "relation",
       "relation": "manyToOne",
@@ -45,6 +39,12 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "children"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "comments"
     }
   }
 }
