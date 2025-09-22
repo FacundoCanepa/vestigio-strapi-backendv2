@@ -536,6 +536,7 @@ export interface ApiCommentComment extends Struct.CollectionTypeSchema {
   };
   attributes: {
     article: Schema.Attribute.Relation<'manyToOne', 'api::article.article'>;
+    author_displayName: Schema.Attribute.String;
     children: Schema.Attribute.Relation<'manyToOne', 'api::comment.comment'>;
     content: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
